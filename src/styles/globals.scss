@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root,
+:root[data-theme="dark"],
+:root[data-theme="light"] {
+  // Colors
+  --primary-100: #fff;
+  --primary-200: #ecf2f8;
+  --primary-300: #9daec2;
+  --primary-400: #6e8098;
+  --primary-500: #48556a;
+
+  // Fonts
+  --ff-sans-serif: "Manrope", sans-serif;
+  --fs: 10px;
+
+  // Settings
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--primary-200);
+  color: var(--primary-900);
+  font-family: var(--ff-sans-serif);
+  font-size: 10px;
+  font-synthesis: none;
+  font-weight: 500;
+  line-height: 1.5;
+  text-rendering: optimizelegibility;
+  text-size-adjust: 100%;
+}
+
+body {
+  & > div#root {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+}
