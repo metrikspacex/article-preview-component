@@ -51,6 +51,8 @@ img.article-image {
   display: block;
   grid-area: articleImage;
   margin-inline: auto;
+  object-fit: cover;
+  object-position: left;
   height: 20rem;
   width: 32.7rem;
 
